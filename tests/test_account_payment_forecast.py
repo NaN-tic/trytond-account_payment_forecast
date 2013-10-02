@@ -16,9 +16,9 @@ from trytond.tests.test_tryton import test_depends
 from trytond.backend.sqlite.database import Database as SQLiteDatabase
 
 
-class TestCase(unittest.TestCase):
+class AccountPaymentForecastCase(unittest.TestCase):
     '''
-    Test module.
+    Test Account Payment Forecast module.
     '''
 
     def setUp(self):
@@ -43,7 +43,8 @@ def doctest_dropdb(test):
 
 def suite():
     suite = trytond.tests.test_tryton.suite()
-    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestCase))
+    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
+        AccountPaymentForecastCase))
     return suite
 
 if __name__ == '__main__':
