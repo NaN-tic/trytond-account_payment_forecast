@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-# The COPYRIGHT file at the top level of this repository contains the full
-# copyright notices and license terms.
-
+#This file is part account_payment_forecast module for Tryton.
+#The COPYRIGHT file at the top level of this repository contains
+#the full copyright notices and license terms.
 import sys
 import os
 DIR = os.path.abspath(os.path.normpath(os.path.join(__file__,
