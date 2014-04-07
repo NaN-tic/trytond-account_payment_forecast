@@ -26,25 +26,19 @@
 		<fieldDescription><![CDATA[/data/record/origin/number]]></fieldDescription>
 	</field>
 	<field name="lang" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/party/lang]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/party/lang/code]]></fieldDescription>
 	</field>
 	<field name="name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/party/name]]></fieldDescription>
 	</field>
 	<field name="acc_number" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/bank/acc_number]]></fieldDescription>
-	</field>
-	<field name="iban" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/bank/iban]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/bank_account/numbers/number]]></fieldDescription>
 	</field>
 	<field name="bank_name" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/bank/name]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/bank_account/bank/party/name]]></fieldDescription>
 	</field>
 	<field name="payment_type" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/payment_type/name]]></fieldDescription>
-	</field>
-	<field name="cheque_received" class="java.lang.Boolean">
-		<fieldDescription><![CDATA[/data/record/cheque_received]]></fieldDescription>
 	</field>
 	<sortField name="maturity_date"/>
 	<variable name="amount" class="java.lang.Number" resetType="None">
@@ -123,13 +117,6 @@
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Bank Name")]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement uuid="bb3c2952-3f43-4f8d-9a74-3608bec56f74" style="defecto" x="454" y="11" width="66" height="15"/>
-					<textElement verticalAlignment="Middle">
-						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Check?")]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
@@ -220,17 +207,12 @@
 			<textField>
 				<reportElement uuid="0077ce8f-33ea-4382-8503-ccd46bb4c4ad" x="273" y="1" width="87" height="15"/>
 				<textElement/>
-				<textFieldExpression><![CDATA[$F{acc_number} != null ? $F{acc_number} : $F{iban}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{acc_number}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement uuid="d1ea2d17-4cda-4331-a538-a944f991f57c" x="363" y="1" width="87" height="15"/>
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{bank_name}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement uuid="f62f2bd8-3972-4d7b-beda-bba74caf8202" x="454" y="1" width="66" height="15"/>
-				<textElement/>
-				<textFieldExpression><![CDATA[$F{cheque_received} ? tr($V{L}, "Yes") : tr($V{L}, "No")]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
