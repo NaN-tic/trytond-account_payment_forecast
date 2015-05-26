@@ -2,6 +2,50 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Aggregated Amount"
+msgstr "Import agregat"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Amount"
+msgstr "Import"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Bank Account"
+msgstr "Comptes bancari"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Bank Name"
+msgstr "Nom del banc"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Document"
+msgstr "Document"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Maturity Date"
+msgstr "Data de venciment"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Maturity date totals:"
+msgstr "Totals data de venciment"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Page:"
+msgstr "Pàgina:"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Partner"
+msgstr "Tercer"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Payment Type"
+msgstr "Tipus de pagament"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
+msgid "Payment/receivables forecast"
+msgstr "Previsió pagaments/cobrament"
+
 msgctxt "model:ir.action,name:report_account_payment_forecast"
 msgid "Cash Forecast"
 msgstr "Previsió de pagaments"
