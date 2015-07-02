@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="forecast" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f06c1480-398c-48d1-aa7c-932159c7a1f1">
 	<property name="ireport.zoom" value="1.3660269107301415"/>
-	<property name="ireport.x" value="78"/>
+	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<style name="defecto" isDefault="true" forecolor="#000000" backcolor="#FFFFFF" fill="Solid" vAlign="Middle" markup="none" pattern="" isBlankWhenNull="true" fontName="SansSerif" fontSize="8" isBold="false" isItalic="true" isUnderline="false"/>
 	<style name="textoscabecera" style="defecto" forecolor="#000000" backcolor="#FFFFFF" radius="10" isBold="true" isItalic="false">
@@ -185,8 +185,8 @@
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA[$F{maturity_date}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement uuid="3b5a144d-2459-48c1-9a9b-6fc8e49059d2" x="1" y="0" width="182" height="15"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="3b5a144d-2459-48c1-9a9b-6fc8e49059d2" positionType="Float" x="1" y="0" width="182" height="15"/>
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
@@ -200,18 +200,18 @@
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{number} != null ? $F{number} : ""]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement uuid="aad5ed58-ab75-4252-90b3-b24e12ce8ffa" x="183" y="1" width="87" height="15"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="aad5ed58-ab75-4252-90b3-b24e12ce8ffa" positionType="Float" x="183" y="1" width="87" height="15"/>
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{payment_type}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement uuid="0077ce8f-33ea-4382-8503-ccd46bb4c4ad" x="273" y="1" width="87" height="15"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="0077ce8f-33ea-4382-8503-ccd46bb4c4ad" positionType="Float" x="273" y="1" width="87" height="15"/>
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{acc_number}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement uuid="d1ea2d17-4cda-4331-a538-a944f991f57c" x="363" y="1" width="87" height="15"/>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="d1ea2d17-4cda-4331-a538-a944f991f57c" positionType="Float" x="363" y="1" width="87" height="15"/>
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{bank_name}]]></textFieldExpression>
 			</textField>
