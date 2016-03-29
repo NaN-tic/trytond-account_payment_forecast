@@ -5,8 +5,8 @@ from trytond.pool import PoolMeta
 from trytond.modules.jasper_reports.jasper import JasperReport
 
 __all__ = ['ForecastReport']
-__metaclass__ = PoolMeta
 
 
 class ForecastReport(JasperReport):
+    __metaclass__ = PoolMeta
     __name__ = 'account_payment_forecast.forecast'
