@@ -10,7 +10,11 @@ import ConfigParser
 
 MODULE = 'account_payment_forecast'
 PREFIX = 'trytonspain'
-MODULE2PREFIX = {}
+MODULE2PREFIX = {
+    'account_bank': 'trytonspain',
+    'account_payment_type': 'trytonspain',
+    'jasper_reports': 'trytonspain',
+    }
 
 
 def read(fname):
