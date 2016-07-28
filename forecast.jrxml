@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="forecast" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f06c1480-398c-48d1-aa7c-932159c7a1f1">
 	<property name="ireport.zoom" value="1.3660269107301415"/>
-	<property name="ireport.x" value="0"/>
+	<property name="ireport.x" value="194"/>
 	<property name="ireport.y" value="0"/>
 	<style name="defecto" isDefault="true" forecolor="#000000" backcolor="#FFFFFF" fill="Solid" vAlign="Middle" markup="none" pattern="" isBlankWhenNull="true" fontName="SansSerif" fontSize="8" isBold="false" isItalic="true" isUnderline="false"/>
 	<style name="textoscabecera" style="defecto" forecolor="#000000" backcolor="#FFFFFF" radius="10" isBold="true" isItalic="false">
@@ -15,16 +15,13 @@
 		<fieldDescription><![CDATA[/data/record/id]]></fieldDescription>
 	</field>
 	<field name="maturity_date" class="java.util.Date">
-		<fieldDescription><![CDATA[/data/record/maturity_date]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/date]]></fieldDescription>
 	</field>
-	<field name="debit" class="java.lang.Number">
-		<fieldDescription><![CDATA[/data/record/debit]]></fieldDescription>
-	</field>
-	<field name="credit" class="java.lang.Number">
-		<fieldDescription><![CDATA[/data/record/credit]]></fieldDescription>
+	<field name="amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/amount]]></fieldDescription>
 	</field>
 	<field name="number" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/origin/number]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/line/origin/number]]></fieldDescription>
 	</field>
 	<field name="reference" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/origin/reference]]></fieldDescription>
@@ -41,15 +38,12 @@
 	<field name="bank_name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/bank_account/bank/party/name]]></fieldDescription>
 	</field>
-	<field name="payment_type" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/payment_type/name]]></fieldDescription>
+	<field name="journal" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/journal/name]]></fieldDescription>
 	</field>
 	<sortField name="maturity_date"/>
-	<variable name="amount" class="java.lang.Number" resetType="None">
-		<variableExpression><![CDATA[($F{debit} != null ? $F{debit} : 0.0) - ($F{credit} != null ? $F{credit} : 0.0)]]></variableExpression>
-	</variable>
 	<variable name="total_maturity" class="java.lang.Number" resetType="Group" resetGroup="maturity" calculation="Sum">
-		<variableExpression><![CDATA[$V{amount}]]></variableExpression>
+		<variableExpression><![CDATA[$F{amount}]]></variableExpression>
 	</variable>
 	<variable name="accumulated" class="java.lang.Number" incrementType="Group" incrementGroup="maturity" calculation="Sum">
 		<variableExpression><![CDATA[$V{total_maturity}]]></variableExpression>
@@ -58,7 +52,7 @@
 		<variableExpression><![CDATA[$F{lang} != null && $F{lang}.length() == 5 ? new Locale( $F{lang}.substring(0,2), $F{lang}.substring(3,5) ) : ( $F{lang} != null && $F{lang}.length() == 2 ? new Locale( $F{lang}.substring(0,2) ) : $P{REPORT_LOCALE} )]]></variableExpression>
 		<initialValueExpression><![CDATA[$F{lang} != null && $F{lang}.length() == 5 ? new Locale( $F{lang}.substring(0,2), $F{lang}.substring(3,5) ) : ( $F{lang} != null && $F{lang}.length() == 2 ? new Locale( $F{lang}.substring(0,2) ) : $P{REPORT_LOCALE} )]]></initialValueExpression>
 	</variable>
-	<filterExpression><![CDATA[$V{amount} != 0.0 && $V{amount} != null]]></filterExpression>
+	<filterExpression><![CDATA[$F{amount} != 0.0 && $F{amount} != null]]></filterExpression>
 	<group name="maturity">
 		<groupExpression><![CDATA[$F{maturity_date}]]></groupExpression>
 		<groupHeader>
@@ -106,7 +100,7 @@
 					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Payment Type")]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Journal")]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement style="defecto" x="273" y="11" width="87" height="15" uuid="f59968b9-3c8f-403c-987c-cbe5695f4f01"/>
@@ -202,7 +196,7 @@
 			<textField pattern="#,##0.00;-#,##0.00">
 				<reportElement x="675" y="1" width="62" height="14" uuid="c40df662-4e8a-44af-971d-9c243408d9f4"/>
 				<textElement textAlignment="Right"/>
-				<textFieldExpression><![CDATA[$V{amount}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="520" y="1" width="87" height="15" uuid="06399aa6-53e2-4f1f-83ab-f52c9b8c8329"/>
@@ -210,7 +204,7 @@
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement positionType="Float" x="183" y="1" width="87" height="15" uuid="aad5ed58-ab75-4252-90b3-b24e12ce8ffa"/>
-				<textFieldExpression><![CDATA[$F{payment_type}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{journal}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement positionType="Float" x="273" y="1" width="87" height="15" uuid="0077ce8f-33ea-4382-8503-ccd46bb4c4ad"/>

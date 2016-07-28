@@ -1,18 +1,20 @@
 <?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
 <tryton>
     <data>
-        <record model="ir.action.report" id="report_account_payment_forecast">
+        <record model="ir.action.report" id="report_payment_forecast">
             <field name="name">Cash Forecast</field>
-            <field name="model">account.move.line</field>
+            <field name="model">account.payment</field>
             <field name="report_name">account_payment_forecast.forecast</field>
             <field name="report">account_payment_forecast/forecast.jrxml</field>
             <field name="extension">pdf</field>
         </record>
 
-        <record model="ir.action.keyword" id="report_sequence_keyword">
+        <record model="ir.action.keyword" id="report_payment_forecast_keyword">
             <field name="keyword">form_print</field>
-            <field name="model">account.move.line,-1</field>
-            <field name="action" ref="report_account_payment_forecast"/>
+            <field name="model">account.payment,-1</field>
+            <field name="action" ref="report_payment_forecast"/>
         </record>
     </data>
 </tryton>

@@ -2,4 +2,4 @@
 Previsiones de pago
 ===================
 
-Este módulo añade informes de apuntes contables a cobrar y pagar contabilizados por dias.
+Este módulo añade informes de cobros y pagos contabilizados por dias.
