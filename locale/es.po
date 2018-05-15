@@ -2,51 +2,51 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Aggregated Amount"
 msgstr "Importe agregado"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Amount"
 msgstr "Importe"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Bank Account"
 msgstr "Cuenta bancaria"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Bank Name"
 msgstr "Nombre del banco"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Document"
 msgstr "Documento"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Journal"
 msgstr "Diario"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Maturity Date"
 msgstr "Fecha vencimiento"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Maturity date totals:"
 msgstr "Total fecha vencimiento:"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Origin"
 msgstr "Origen"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Page:"
 msgstr "Pagina"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Partner"
 msgstr "Tercero"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Payment/receivables forecast"
 msgstr "Previsión de cobros/pagos"
 
