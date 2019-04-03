@@ -2,6 +2,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "model:ir.action,name:report_payment_forecast"
+msgid "Cash Forecast"
+msgstr "Previsió de pagaments"
+
 msgctxt "report:account_payment_forecast.forecast:"
 msgid "Aggregated Amount"
 msgstr "Import agregat"
@@ -49,7 +53,3 @@ msgstr "Tercer"
 msgctxt "report:account_payment_forecast.forecast:"
 msgid "Payment/receivables forecast"
 msgstr "Previsió pagaments/cobrament"
-
-msgctxt "model:ir.action,name:report_payment_forecast"
-msgid "Cash Forecast"
-msgstr "Previsió de pagaments"
