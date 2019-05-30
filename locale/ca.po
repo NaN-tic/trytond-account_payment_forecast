@@ -39,7 +39,6 @@ msgid "Maturity date totals:"
 msgstr "Totals data de venciment"
 
 msgctxt "report:account_payment_forecast.forecast:"
-msgctxt "report:account_payment_forecast.forecast:"
 msgid "Page:"
 msgstr "Pàgina:"
 
