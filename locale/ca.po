@@ -51,7 +51,7 @@ msgctxt "report:account_payment_forecast.forecast:"
 msgid "Payment Type"
 msgstr "Tipus de pagament"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Payment/receivables forecast"
 msgstr "Previsió pagaments/cobrament"
 
