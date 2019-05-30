@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -27,8 +27,8 @@ msgid "Document"
 msgstr "Document"
 
 msgctxt "report:account_payment_forecast.forecast:"
-msgid "Journal"
-msgstr "Diari"
+msgid "Origin"
+msgstr "Origen"
 
 msgctxt "report:account_payment_forecast.forecast:"
 msgid "Maturity Date"
@@ -39,9 +39,6 @@ msgid "Maturity date totals:"
 msgstr "Totals data de venciment"
 
 msgctxt "report:account_payment_forecast.forecast:"
-msgid "Origin"
-msgstr "Origen"
-
 msgctxt "report:account_payment_forecast.forecast:"
 msgid "Page:"
 msgstr "Pàgina:"
@@ -51,5 +48,13 @@ msgid "Partner"
 msgstr "Tercer"
 
 msgctxt "report:account_payment_forecast.forecast:"
+msgid "Payment Type"
+msgstr "Tipus de pagament"
+
+msgctxt "jasper:account_payment_forecast.forecast:"
 msgid "Payment/receivables forecast"
 msgstr "Previsió pagaments/cobrament"
+
+msgctxt "model:ir.action,name:report_payment_forecast"
+msgid "Cash Forecast"
+msgstr "Previsió de pagaments"
