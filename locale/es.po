@@ -38,7 +38,7 @@ msgctxt "report:account_payment_forecast.forecast:"
 msgid "Maturity date totals:"
 msgstr "Total fecha vencimiento:"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Page:"
 msgstr "Pagina"
 
@@ -50,7 +50,7 @@ msgctxt "report:account_payment_forecast.forecast:"
 msgid "Payment Type"
 msgstr "Tipo de pago"
 
-msgctxt "jasper:account_payment_forecast.forecast:"
+msgctxt "report:account_payment_forecast.forecast:"
 msgid "Payment/receivables forecast"
 msgstr "Previsión de cobros/pagos"
 
