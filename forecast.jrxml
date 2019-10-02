@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 5.5.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="forecast" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f06c1480-398c-48d1-aa7c-932159c7a1f1">
 	<property name="ireport.zoom" value="1.3660269107301415"/>
 	<property name="ireport.x" value="0"/>
@@ -24,10 +25,10 @@
 		<fieldDescription><![CDATA[/data/record/credit]]></fieldDescription>
 	</field>
 	<field name="number" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/origin/number]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/move_origin/number]]></fieldDescription>
 	</field>
 	<field name="reference" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/origin/reference]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/move_origin/reference]]></fieldDescription>
 	</field>
 	<field name="lang" class="java.lang.String">
 		<fieldDescription><![CDATA[User/language/code]]></fieldDescription>
@@ -64,28 +65,32 @@
 		<groupHeader>
 			<band height="32">
 				<textField>
-					<reportElement style="defecto" x="1" y="10" width="182" height="19" uuid="3faaae5e-7a09-4fb3-be21-4f6909e34644"/>
+					<reportElement style="defecto" x="1" y="10" width="180" height="19" uuid="3faaae5e-7a09-4fb3-be21-4f6909e34644">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
 					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Partner")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement style="defecto" x="520" y="11" width="87" height="18" uuid="148639c4-7e24-4233-a5bb-0140b78782d2"/>
+					<reportElement style="defecto" x="521" y="11" width="90" height="18" uuid="148639c4-7e24-4233-a5bb-0140b78782d2">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
 					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Document")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement style="defecto" x="608" y="10" width="66" height="19" uuid="f567348d-0352-46a5-a671-7b0f6fde5d3a"/>
+					<reportElement style="defecto" x="611" y="10" width="66" height="19" uuid="f567348d-0352-46a5-a671-7b0f6fde5d3a"/>
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Maturity Date")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement style="defecto" x="675" y="10" width="62" height="19" uuid="61918825-4166-4696-9cb7-fd5fcfc67a16"/>
+					<reportElement style="defecto" x="677" y="10" width="62" height="19" uuid="61918825-4166-4696-9cb7-fd5fcfc67a16"/>
 					<textElement textAlignment="Right" verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
@@ -102,28 +107,32 @@
 					<reportElement x="0" y="29" width="802" height="1" uuid="0bd7170d-04a9-40f2-9970-ffa45113974a"/>
 				</line>
 				<textField>
-					<reportElement style="defecto" x="183" y="11" width="87" height="15" uuid="bcde88d9-e598-46b2-afa0-3064e3516720"/>
+					<reportElement style="defecto" x="181" y="11" width="75" height="15" uuid="bcde88d9-e598-46b2-afa0-3064e3516720">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
 					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Payment Type")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement style="defecto" x="273" y="11" width="87" height="15" uuid="f59968b9-3c8f-403c-987c-cbe5695f4f01"/>
+					<reportElement style="defecto" x="256" y="11" width="87" height="15" uuid="f59968b9-3c8f-403c-987c-cbe5695f4f01"/>
 					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Bank Account")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement style="defecto" x="364" y="11" width="87" height="15" uuid="221d8be9-151f-4870-8472-ef9b8057c42e"/>
+					<reportElement style="defecto" x="343" y="11" width="87" height="15" uuid="221d8be9-151f-4870-8472-ef9b8057c42e"/>
 					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Bank Name")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement style="defecto" x="433" y="11" width="87" height="15" uuid="4ace4c21-0f0b-4004-b9db-e2a779e267be"/>
+					<reportElement style="defecto" x="431" y="11" width="90" height="15" uuid="4ace4c21-0f0b-4004-b9db-e2a779e267be">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
 					<textElement verticalAlignment="Middle">
 						<font size="8" isBold="true" isItalic="false" isUnderline="false"/>
 					</textElement>
@@ -191,37 +200,45 @@
 	<detail>
 		<band height="16" splitType="Stretch">
 			<textField pattern="dd/MM/yyyy">
-				<reportElement x="607" y="1" width="66" height="15" uuid="98089e2d-fe14-42dc-a29f-736230743e1e"/>
+				<reportElement x="611" y="1" width="66" height="15" uuid="98089e2d-fe14-42dc-a29f-736230743e1e">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA[$F{maturity_date}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement positionType="Float" x="1" y="0" width="182" height="15" uuid="3b5a144d-2459-48c1-9a9b-6fc8e49059d2"/>
+				<reportElement positionType="Float" x="1" y="0" width="180" height="15" uuid="3b5a144d-2459-48c1-9a9b-6fc8e49059d2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.00;-#,##0.00">
-				<reportElement x="675" y="1" width="62" height="14" uuid="c40df662-4e8a-44af-971d-9c243408d9f4"/>
+				<reportElement x="677" y="1" width="62" height="14" uuid="c40df662-4e8a-44af-971d-9c243408d9f4"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA[$V{amount}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="520" y="1" width="87" height="15" uuid="06399aa6-53e2-4f1f-83ab-f52c9b8c8329"/>
+				<reportElement x="521" y="1" width="90" height="15" uuid="06399aa6-53e2-4f1f-83ab-f52c9b8c8329">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$F{number} != null ? $F{number} : ""]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement positionType="Float" x="183" y="1" width="87" height="15" uuid="aad5ed58-ab75-4252-90b3-b24e12ce8ffa"/>
+				<reportElement positionType="Float" x="181" y="1" width="75" height="15" uuid="aad5ed58-ab75-4252-90b3-b24e12ce8ffa"/>
 				<textFieldExpression><![CDATA[$F{payment_type}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement positionType="Float" x="273" y="1" width="87" height="15" uuid="0077ce8f-33ea-4382-8503-ccd46bb4c4ad"/>
+				<reportElement positionType="Float" x="256" y="1" width="87" height="15" uuid="0077ce8f-33ea-4382-8503-ccd46bb4c4ad"/>
 				<textFieldExpression><![CDATA[$F{acc_number}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement positionType="Float" x="363" y="1" width="87" height="15" uuid="d1ea2d17-4cda-4331-a538-a944f991f57c"/>
+				<reportElement positionType="Float" x="343" y="1" width="87" height="15" uuid="d1ea2d17-4cda-4331-a538-a944f991f57c"/>
 				<textFieldExpression><![CDATA[$F{bank_name}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement positionType="Float" x="433" y="1" width="87" height="15" uuid="8e5596a2-d648-4d57-b715-9de714a32f09"/>
+				<reportElement positionType="Float" x="431" y="1" width="90" height="15" uuid="8e5596a2-d648-4d57-b715-9de714a32f09">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textFieldExpression><![CDATA[$F{reference}]]></textFieldExpression>
 			</textField>
 		</band>
