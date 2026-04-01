@@ -1,0 +1,162 @@
+@page {
+  size: A4 landscape;
+  @bottom-right {
+    content: counter(page) " / " counter(pages);
+    text-align: right;
+    font-family: 'Arial';
+    font-size: 9px;
+    padding-bottom: 0.5cm;
+    text-align: right;
+    vertical-align: bottom;
+    white-space: nowrap;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 0.6cm;
+  text-align: left;
+  font-family: 'Arial';
+  font-size: 9px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial';
+  font-size: 9px;
+  line-height: 1.2;
+  color: #000;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1.document {
+  font-size: 14px;
+}
+
+h2.document {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+table {
+  width: 100%;
+  max-width: 26cm;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0 0 10px 0;
+}
+
+thead th,
+tbody td,
+tfoot td {
+  padding: 3px 4px;
+  vertical-align: top;
+}
+
+thead th {
+  font-size: 8.5px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+tbody tr {
+  page-break-inside: avoid;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.forecast-header {
+  display: table;
+  width: 100%;
+}
+
+.forecast-header-company,
+.forecast-header-document {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+}
+
+.forecast-header-document {
+  text-align: right;
+}
+
+.forecast-report {
+  width: 100%;
+}
+
+.forecast-group {
+  page-break-inside: avoid;
+  margin-bottom: 6px;
+  width: 26cm;
+  max-width: 100%;
+}
+
+.forecast-group-total td {
+  border-top: 1px solid #000;
+  padding-top: 5px;
+}
+
+.forecast-group-total-label {
+  text-align: right;
+}
+
+.col-partner {
+  width: 23%;
+}
+
+.col-payment-type {
+  width: 10%;
+}
+
+.col-bank-account {
+  width: 12%;
+}
+
+.col-bank-name {
+  width: 12%;
+}
+
+.col-origin {
+  width: 11%;
+}
+
+.col-document {
+  width: 10%;
+}
+
+.col-date {
+  width: 8%;
+  white-space: nowrap;
+}
+
+.col-amount,
+.col-aggregated {
+  width: 7%;
+  white-space: nowrap;
+}
