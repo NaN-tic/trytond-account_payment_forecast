@@ -2,58 +2,58 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "model:ir.action,name:report_payment_forecast"
+msgctxt "model:ir.action,name:report_account_payment_forecast"
 msgid "Cash Forecast"
 msgstr "Previsiones de pago"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Aggregated Amount"
 msgstr "Importe agregado"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Amount"
 msgstr "Importe"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Bank Account"
 msgstr "Cuenta bancaria"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Bank Name"
 msgstr "Nombre del banco"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Document"
 msgstr "Documento"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Origin"
 msgstr "Origen"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Maturity Date"
 msgstr "Fecha vencimiento"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Maturity date totals:"
 msgstr "Total fecha vencimiento:"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Page:"
 msgstr "Pagina"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Partner"
 msgstr "Tercero"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Payment Type"
 msgstr "Tipo de pago"
 
-msgctxt "report:account_payment_forecast.forecast:"
+msgctxt "html_report:h:"
 msgid "Payment/receivables forecast"
 msgstr "Previsión de cobros/pagos"
 
-msgctxt "model:ir.action,name:report_payment_forecast"
+msgctxt "model:ir.action,name:report_account_payment_forecast"
 msgid "Cash Forecast"
 msgstr "Previsiones de pago"
