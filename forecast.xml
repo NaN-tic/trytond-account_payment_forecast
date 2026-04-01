@@ -5,9 +5,9 @@
             <field name="name">Cash Forecast</field>
             <field name="model">account.move.line</field>
             <field name="report_name">account_payment_forecast.forecast</field>
-            <field name="report">account_payment_forecast/forecast.jrxml</field>
+            <field name="report" eval="None"/>
             <field name="extension">pdf</field>
-            <field name="template_extension">jrxml</field>
+            <field name="template_extension">html</field>
         </record>
 
         <record model="ir.action.keyword" id="report_sequence_keyword">
