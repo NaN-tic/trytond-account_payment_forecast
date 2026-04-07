@@ -5,7 +5,7 @@ from datetime import date, datetime
 from decimal import Decimal
 from itertools import groupby
 
-from dominate.tags import div, h1, h2, header as header_tag, span, table
+from dominate.tags import div, h1, header as header_tag, span, table
 from dominate.tags import tbody, td
 from dominate.tags import tfoot, th, thead, tr
 
@@ -103,13 +103,20 @@ class ForecastReport(DominateReport, metaclass=PoolMeta):
 
     @classmethod
     def _document(cls, record):
-        return (record.move_origin and record.move_origin.raw.number
-            and record.move_origin.render.number or '')
+        move_origin = record.move_origin
+        if not move_origin:
+            return ''
+        if hasattr(move_origin.raw, 'number'):
+            return (move_origin.raw.number and move_origin.render.number or '')
+        return move_origin.render.rec_name
 
     @classmethod
     def _origin(cls, record):
-        return (record.move_origin and record.move_origin.raw.reference
-            and record.move_origin.render.reference or '')
+        move_origin = record.move_origin
+        if not move_origin or not hasattr(move_origin.raw, 'reference'):
+            return ''
+        return (move_origin.raw.reference and move_origin.render.reference
+            or '')
 
     @classmethod
     def _grouped_records(cls, records):
