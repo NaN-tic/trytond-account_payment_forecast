@@ -47,7 +47,8 @@ class ForecastReport(DominateReport, metaclass=PoolMeta):
 
     @classmethod
     def show_company_info(cls, company, show_party=True,
-            show_contact_mechanism=True):
+            show_contact_mechanism=True, show_phone=True,
+            show_email=True, show_website=True):
         container = div(id='company-info', cls='header-details')
         container.add(span(company.party.render.name, cls='company-info-name'))
         return container
