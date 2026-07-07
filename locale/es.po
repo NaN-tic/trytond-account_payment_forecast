@@ -6,54 +6,50 @@ msgctxt "model:ir.action,name:report_account_payment_forecast"
 msgid "Cash Forecast"
 msgstr "Previsiones de pago"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Aggregated Amount"
 msgstr "Importe agregado"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Amount"
 msgstr "Importe"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Bank Account"
 msgstr "Cuenta bancaria"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Bank Name"
 msgstr "Nombre del banco"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Document"
 msgstr "Documento"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Origin"
 msgstr "Origen"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Maturity Date"
 msgstr "Fecha vencimiento"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Maturity date totals:"
 msgstr "Total fecha vencimiento:"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Page:"
 msgstr "Pagina"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Partner"
 msgstr "Tercero"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Payment Type"
 msgstr "Tipo de pago"
 
-msgctxt "html_report:h:"
+msgctxt "xgettext:x:"
 msgid "Payment/receivables forecast"
 msgstr "Previsión de cobros/pagos"
-
-msgctxt "model:ir.action,name:report_account_payment_forecast"
-msgid "Cash Forecast"
-msgstr "Previsiones de pago"

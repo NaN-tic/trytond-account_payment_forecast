@@ -10,6 +10,7 @@ from configparser import ConfigParser
 MODULE = 'account_payment_forecast'
 PREFIX = 'nantic'
 MODULE2PREFIX = {
+    'xgettext': 'nantic',
     'account_payment_type': 'nantic',
     'account_bank': 'nantic',
     'html_report': 'nantic',
