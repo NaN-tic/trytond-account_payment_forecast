@@ -1,3 +1,4 @@
+
 # This file is part account_payment_forecast module for Tryton.
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
@@ -14,11 +15,9 @@ from trytond.transaction import Transaction
 from trytond.tools import file_open
 from trytond.modules.html_report.dominate_report import DominateReport
 from trytond.modules.html_report.engine import render as html_render
-from trytond.modules.html_report.i18n import _
-
+from trytond.modules.xgettext import _
 
 _ZERO = Decimal('0.0')
-
 
 class ForecastReport(DominateReport, metaclass=PoolMeta):
     __name__ = 'account_payment_forecast.forecast'
