@@ -53,3 +53,11 @@ msgstr "Tipo de pago"
 msgctxt "xgettext:x:"
 msgid "Payment/receivables forecast"
 msgstr "Previsión de cobros/pagos"
+
+msgctxt "xgettext:x:"
+msgid "Payment forecast"
+msgstr "Previsión de pagos"
+
+msgctxt "xgettext:x:"
+msgid "Receivables forecast"
+msgstr "Previsión de cobros"

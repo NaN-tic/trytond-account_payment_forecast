@@ -52,4 +52,12 @@ msgstr "Tipus de pagament"
 
 msgctxt "xgettext:x:"
 msgid "Payment/receivables forecast"
-msgstr "Previsió pagaments/cobrament"
+msgstr "Previsió de pagaments/cobraments"
+
+msgctxt "xgettext:x:"
+msgid "Payment forecast"
+msgstr "Previsió de pagaments"
+
+msgctxt "xgettext:x:"
+msgid "Receivables forecast"
+msgstr "Previsió de cobraments"

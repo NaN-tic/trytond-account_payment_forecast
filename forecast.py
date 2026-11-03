@@ -53,9 +53,9 @@ class ForecastReport(DominateReport, metaclass=PoolMeta):
         return container
 
     @classmethod
-    def show_document_info(cls, record):
+    def show_document_info(cls, title):
         container = div(cls='forecast-document-info')
-        container.add(h1(_('Payment/receivables forecast'), cls='document'))
+        container.add(h1(title, cls='document'))
         return container
 
     @classmethod
@@ -63,7 +63,7 @@ class ForecastReport(DominateReport, metaclass=PoolMeta):
         record = records[0]
         header = div()
         company = record.company
-        document_info = cls.show_document_info(record)
+        document_info = cls.show_document_info(cls.title(action, data, records))
         header_box = div(cls='forecast-header')
         header_box.add(div(
                 cls.show_company_info(company),
@@ -82,6 +82,13 @@ class ForecastReport(DominateReport, metaclass=PoolMeta):
 
     @classmethod
     def title(cls, action, data, records):
+        amounts = [cls._amount(record) for record in records]
+        payments = any(amount < _ZERO for amount in amounts)
+        receivables = any(amount > _ZERO for amount in amounts)
+        if payments and not receivables:
+            return _('Payment forecast')
+        if receivables and not payments:
+            return _('Receivables forecast')
         return _('Payment/receivables forecast')
 
     @classmethod
