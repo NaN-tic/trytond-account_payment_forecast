@@ -1,0 +1,68 @@
+#
+msgid ""
+msgstr ""
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "model:ir.action,name:report_account_payment_forecast"
+msgid "Cash Forecast"
+msgstr "现金预测"
+
+msgctxt "xgettext:x:"
+msgid "Aggregated Amount"
+msgstr "累计金额"
+
+msgctxt "xgettext:x:"
+msgid "Amount"
+msgstr "数额"
+
+msgctxt "xgettext:x:"
+msgid "Bank Account"
+msgstr "银行账户"
+
+msgctxt "xgettext:x:"
+msgid "Bank Name"
+msgstr "银行名称"
+
+msgctxt "xgettext:x:"
+msgid "Document"
+msgstr "文档"
+
+msgctxt "xgettext:x:"
+msgid "Origin"
+msgstr "依据"
+
+msgctxt "xgettext:x:"
+msgid "Maturity Date"
+msgstr "到期日"
+
+msgctxt "xgettext:x:"
+msgid "Maturity date totals:"
+msgstr "到期日合计："
+
+msgctxt "xgettext:x:"
+msgid "Page:"
+msgstr "页码："
+
+msgctxt "xgettext:x:"
+msgid "Partner"
+msgstr "合作伙伴"
+
+msgctxt "xgettext:x:"
+msgid "Payment Type"
+msgstr "付款方式"
+
+msgctxt "xgettext:x:"
+msgid "Payment/receivables forecast"
+msgstr "付款/收款预测"
+
+msgctxt "xgettext:x:"
+msgid "Payment forecast"
+msgstr "付款预测"
+
+msgctxt "xgettext:x:"
+msgid "Receivables forecast"
+msgstr "收款预测"
