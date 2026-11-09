@@ -1,0 +1,68 @@
+#
+msgid ""
+msgstr ""
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "model:ir.action,name:report_account_payment_forecast"
+msgid "Cash Forecast"
+msgstr "Pénzforgalmi előrejelzés"
+
+msgctxt "xgettext:x:"
+msgid "Aggregated Amount"
+msgstr "Összesített összeg"
+
+msgctxt "xgettext:x:"
+msgid "Amount"
+msgstr "Összeg"
+
+msgctxt "xgettext:x:"
+msgid "Bank Account"
+msgstr "Bankszámlaszám"
+
+msgctxt "xgettext:x:"
+msgid "Bank Name"
+msgstr "Bank neve"
+
+msgctxt "xgettext:x:"
+msgid "Document"
+msgstr "Dokumentum"
+
+msgctxt "xgettext:x:"
+msgid "Origin"
+msgstr "Eredet"
+
+msgctxt "xgettext:x:"
+msgid "Maturity Date"
+msgstr "Esedékesség"
+
+msgctxt "xgettext:x:"
+msgid "Maturity date totals:"
+msgstr "Esedékesség szerinti összesítések:"
+
+msgctxt "xgettext:x:"
+msgid "Page:"
+msgstr "Oldal:"
+
+msgctxt "xgettext:x:"
+msgid "Partner"
+msgstr "Partner"
+
+msgctxt "xgettext:x:"
+msgid "Payment Type"
+msgstr "Fizetési mód"
+
+msgctxt "xgettext:x:"
+msgid "Payment/receivables forecast"
+msgstr "Kifizetések/bevételek előrejelzése"
+
+msgctxt "xgettext:x:"
+msgid "Payment forecast"
+msgstr "Kifizetések előrejelzése"
+
+msgctxt "xgettext:x:"
+msgid "Receivables forecast"
+msgstr "Bevételek előrejelzése"
