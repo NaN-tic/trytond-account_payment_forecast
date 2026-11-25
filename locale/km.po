@@ -1,0 +1,68 @@
+#
+msgid ""
+msgstr ""
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "model:ir.action,name:report_account_payment_forecast"
+msgid "Cash Forecast"
+msgstr "ការព្យាករសាច់ប្រាក់"
+
+msgctxt "xgettext:x:"
+msgid "Aggregated Amount"
+msgstr "ចំនួនទឹកប្រាក់បូកសរុប"
+
+msgctxt "xgettext:x:"
+msgid "Amount"
+msgstr "ចំនួនទឹកប្រាក់"
+
+msgctxt "xgettext:x:"
+msgid "Bank Account"
+msgstr "គណនីធនាគារ"
+
+msgctxt "xgettext:x:"
+msgid "Bank Name"
+msgstr "ឈ្មោះធនាគារ"
+
+msgctxt "xgettext:x:"
+msgid "Document"
+msgstr "ឯកសារ"
+
+msgctxt "xgettext:x:"
+msgid "Origin"
+msgstr "ប្រភពដើម"
+
+msgctxt "xgettext:x:"
+msgid "Maturity Date"
+msgstr "កាលបរិច្ឆេទដល់កំណត់"
+
+msgctxt "xgettext:x:"
+msgid "Maturity date totals:"
+msgstr "ចំនួនសរុបតាមថ្ងៃដល់កំណត់៖"
+
+msgctxt "xgettext:x:"
+msgid "Page:"
+msgstr "ទំព័រ៖"
+
+msgctxt "xgettext:x:"
+msgid "Partner"
+msgstr "ដៃគូ"
+
+msgctxt "xgettext:x:"
+msgid "Payment Type"
+msgstr "ប្រភេទការទូទាត់"
+
+msgctxt "xgettext:x:"
+msgid "Payment/receivables forecast"
+msgstr "ការព្យាករការទូទាត់ និងប្រាក់ត្រូវទទួល"
+
+msgctxt "xgettext:x:"
+msgid "Payment forecast"
+msgstr "ការព្យាករការទូទាត់"
+
+msgctxt "xgettext:x:"
+msgid "Receivables forecast"
+msgstr "ការព្យាករប្រាក់ត្រូវទទួល"
